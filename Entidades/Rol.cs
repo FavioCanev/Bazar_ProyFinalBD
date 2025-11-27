@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Rol
+    public class Rol
     {
-        private int idRol { get; set; }
-        private string nombre { get; set; }
-        private string descripcion { get; set; }
-        private DateTime fechaCreacion { get; set; }
+        public int idRol { get; set; }
+        public string nombre { get; set; }
+        public string descripcion { get; set; }
+        public DateTime fechaCreacion { get; set; }
 
         //Constructores
         public Rol(int idRol, string nombre, string descripcion, DateTime fechaCreacion)

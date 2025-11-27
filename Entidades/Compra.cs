@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Compra
+    public class Compra
     {
-        private int idCompra { get; set; }
-        private int idProveedor { get; set; }
-        private int idEmpleado { get; set; }
-        private DateTime fecha { get; set; }
-        private double subtotal { get; set; }
-        private string total { get; set; }
-        private string estado { get; set; }
+        public int idCompra { get; set; }
+        public int idProveedor { get; set; }
+        public int idEmpleado { get; set; }
+        public DateTime fecha { get; set; }
+        public decimal subtotal { get; set; }
+        public string total { get; set; }
+        public string estado { get; set; }
         
         //Constructores
-        public Compra(int idCompra, int idProveedor, int idEmpleado, DateTime fecha, double subtotal, string total, string estado)
+        public Compra(int idCompra, int idProveedor, int idEmpleado, DateTime fecha, decimal subtotal, string total, string estado)
         {
             this.idCompra = idCompra;
             this.idProveedor = idProveedor;

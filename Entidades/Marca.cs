@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Marca
+    public class Marca
     {
-        private int idMarca { get; set; }
-        private string nombre { get; set; }
+        public int idMarca { get; set; }
+        public string nombre { get; set; }
 
         //Constructores
         public Marca(int idMarca, string nombre)

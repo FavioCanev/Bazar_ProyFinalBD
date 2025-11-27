@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Devolucion
+    public class Devolucion
     {
-        private int idDevolucion { get; set; }
-        private int idVenta { get; set; }
-        private int idEmpleado { get; set; }
-        private DateTime fecha { get; set; }
-        private string motivo { get; set; }
-        private double montoDevuelto { get; set; }
+        public int idDevolucion { get; set; }
+        public int idVenta { get; set; }
+        public int idEmpleado { get; set; }
+        public DateTime fecha { get; set; }
+        public string motivo { get; set; }
+        public decimal montoDevuelto { get; set; }
         //Constructores
-        public Devolucion(int idDevolucion, int idVenta, int idEmpleado, DateTime fecha, string motivo, double montoDevuelto)
+        public Devolucion(int idDevolucion, int idVenta, int idEmpleado, DateTime fecha, string motivo, decimal montoDevuelto)
         {
             this.idDevolucion = idDevolucion;
             this.idVenta = idVenta;

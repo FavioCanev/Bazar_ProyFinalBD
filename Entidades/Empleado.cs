@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Empleado
+    public class Empleado
     {
-        private int idEmpleado { get; set; }
-        private int idRol { get; set; }
-        private string nombre { get; set; }
-        private string apellidoPaterno { get; set; }
-        private string apellidoMaterno { get; set; }
-        private string dni { get; set; }
-        private string telefono { get; set; }
-        private double sueldo { get; set; }
-        private string estado { get; set; }
-        private DateTime fechaContratacion { get; set; }
+        public int idEmpleado { get; set; }
+        public int idRol { get; set; }
+        public string nombre { get; set; }
+        public string apellidoPaterno { get; set; }
+        public string apellidoMaterno { get; set; }
+        public string dni { get; set; }
+        public string telefono { get; set; }
+        public decimal sueldo { get; set; }
+        public string estado { get; set; }
+        public DateTime fechaContratacion { get; set; }
 
         //Constructores
-        public Empleado(int idEmpleado, int idRol, string nombre, string apellidoPaterno, string apellidoMaterno, string dni, string telefono, double sueldo, string estado, DateTime fechaContratacion)
+        public Empleado(int idEmpleado, int idRol, string nombre, string apellidoPaterno, string apellidoMaterno, string dni, string telefono, decimal sueldo, string estado, DateTime fechaContratacion)
         {
             this.idEmpleado = idEmpleado;
             this.idRol = idRol;

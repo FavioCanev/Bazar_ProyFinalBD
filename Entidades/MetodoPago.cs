@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class MetodoPago
+    public class MetodoPago
     {
-        private int idMetodoPago { get; set; }
-        private string nombre { get; set; }
-        private string descripcion { get; set; }
+        public int idMetodoPago { get; set; }
+        public string nombre { get; set; }
+        public string descripcion { get; set; }
 
         //Constructores
         public MetodoPago(int idMetodoPago, string nombre, string descripcion)

@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Categoria
+    public class Categoria
     {
-        private int idCategoria { get; set; }
-        private string nombre { get; set; }
-        private string descripcion { get; set; }
-        private bool estado { get; set; }
+        public int idCategoria { get; set; }
+        public string nombre { get; set; }
+        public string descripcion { get; set; }
+        public bool estado { get; set; }
 
         // Constructores
         public Categoria(int idCategoria, string nombre, string descripcion, bool estado)

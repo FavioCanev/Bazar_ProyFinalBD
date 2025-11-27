@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Proveedor
+    public class Proveedor
     {
-        private int idProveedor { get; set; }
-        private string nombre { get; set; }
-        private string ruc { get; set; }
-        private string direccion { get; set; }
-        private string estado { get; set; }
-        private DateTime fechaRegistro { get; set; }
+        public int idProveedor { get; set; }
+        public string nombre { get; set; }
+        public string ruc { get; set; }
+        public string direccion { get; set; }
+        public string estado { get; set; }
+        public DateTime fechaRegistro { get; set; }
 
 
         //Constructores

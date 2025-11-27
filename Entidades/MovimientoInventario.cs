@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class MovimientoInventario
+    public class MovimientoInventario
     {
-        private int idMovimiento { get; set; }
-        private int idProducto { get; set; }
-        private int idUsuario { get; set; }
-        private string tipoMovimiento { get; set; } // "Entrada" o "Salida"
-        private int cantidad { get; set; }
-        private string motivo { get; set; }
-        private DateTime fecha { get; set; }
+        public int idMovimiento { get; set; }
+        public int idProducto { get; set; }
+        public int idUsuario { get; set; }
+        public string tipoMovimiento { get; set; } // "Entrada" o "Salida"
+        public int cantidad { get; set; }
+        public string motivo { get; set; }
+        public DateTime fecha { get; set; }
 
         //Constructores
         public MovimientoInventario (int idMovimiento, int idProducto, int idUsuario, string tipoMovimiento, int cantidad, string motivo, DateTime fecha)

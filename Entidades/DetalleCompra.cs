@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class DetalleCompra
+    public class DetalleCompra
     {
-        private int idDetalleCompra { get; set; }
-        private int idCompra { get; set; }
-        private int idProducto { get; set; }
-        private int cantidad { get; set; }
-        private decimal precioUnitario { get; set; }
+        public int idDetalleCompra { get; set; }
+        public int idCompra { get; set; }
+        public int idProducto { get; set; }
+        public int cantidad { get; set; }
+        public decimal precioUnitario { get; set; }
 
         //Constructores
         public DetalleCompra(int idDetalleCompra, int idCompra, int idProducto, int cantidad, decimal precioUnitario)

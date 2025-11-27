@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Producto
+    public class Producto
     {
-        private int idProducto { get; set; }
-        private int idCategoria { get; set; }
-        private int idMarca { get; set; }
-        private int idProveedor { get; set; }
-        private string nombre { get; set; }
-        private string caracteristica { get; set; }
-        private string unidadMedida { get; set; }
-        private double precioCompra { get; set; }
-        private double precioVenta { get; set; }
-        private string estado { get; set; }
-        private DateTime fechaRegistro { get; set; }
+        public int idProducto { get; set; }
+        public int idCategoria { get; set; }
+        public int idMarca { get; set; }
+        public int idProveedor { get; set; }
+        public string nombre { get; set; }
+        public string caracteristica { get; set; }
+        public string unidadMedida { get; set; }
+        public decimal precioCompra { get; set; }
+        public decimal precioVenta { get; set; }
+        public string estado { get; set; }
+        public DateTime fechaRegistro { get; set; }
 
         //Constructores
-        public Producto(int idProducto, int idCategoria, int idMarca, int idProveedor, string nombre, string caracteristica, string unidadMedida, double precioCompra, double precioVenta, string estado, DateTime fechaRegistro)
+        public Producto(int idProducto, int idCategoria, int idMarca, int idProveedor, string nombre, string caracteristica, string unidadMedida, decimal precioCompra, decimal precioVenta, string estado, DateTime fechaRegistro)
         {
             this.idProducto = idProducto;
             this.idCategoria = idCategoria;

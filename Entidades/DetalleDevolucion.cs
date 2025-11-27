@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class DetalleDevolucion
+    public class DetalleDevolucion
     {
-        private int idDetalleDevolucion { get; set; }
-        private int idDevolucion { get; set; }
-        private int idProducto { get; set; }
-        private double cantidad { get; set; }
+        public int idDetalleDevolucion { get; set; }
+        public int idDevolucion { get; set; }
+        public int idProducto { get; set; }
+        public decimal cantidad { get; set; }
 
         //Constructores
-        public DetalleDevolucion(int idDetalleDevolucion, int idDevolucion, int idProducto, double cantidad)
+        public DetalleDevolucion(int idDetalleDevolucion, int idDevolucion, int idProducto, decimal cantidad)
         {
             this.idDetalleDevolucion = idDetalleDevolucion;
             this.idDevolucion = idDevolucion;
