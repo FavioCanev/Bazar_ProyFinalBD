@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    internal static class Program
+    internal static class Principal
     {
         /// <summary>
         /// Punto de entrada principal para la aplicación.
@@ -16,7 +16,7 @@ namespace Presentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Login());
         }
     }
 }

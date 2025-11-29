@@ -22,8 +22,6 @@ namespace Entidades
             this.descripcion = descripcion;
             this.estado = estado;
         }
-        public Categoria()
-        {
-        }
+        public Categoria() { }
     }
 }

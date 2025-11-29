@@ -8,11 +8,11 @@ namespace Entidades
 {
     internal class ContactoProveedor
     {
-        private int idContacto { get; set; }
-        private int idProveedor { get; set; }
-        private string contactoNombre { get; set; }
-        private string contactoApellido { get; set; }
-        private string contactoTelefono { get; set; }
+        public int idContacto { get; set; }
+        public int idProveedor { get; set; }
+        public string contactoNombre { get; set; }
+        public string contactoApellido { get; set; }
+        public string contactoTelefono { get; set; }
 
         //Constructores 
 
@@ -20,9 +20,9 @@ namespace Entidades
         {
             this.idContacto = idContacto;
             this.idProveedor = idProveedor;
-            contactoNombre = contactoNombre;
-            contactoApellido = contactoApellido;
-            contactoTelefono = contactoTelefono;
+            this.contactoNombre = contactoNombre;
+            this.contactoApellido = contactoApellido;
+            this.contactoTelefono = contactoTelefono;
         }
         public ContactoProveedor()
         {

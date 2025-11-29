@@ -46,18 +46,14 @@
     <Compile Include="Compra.cs" />
     <Compile Include="ContactoProveedor.cs" />
     <Compile Include="DetalleCompra.cs" />
-    <Compile Include="DetalleDevolucion.cs" />
     <Compile Include="DetalleVenta.cs" />
-    <Compile Include="Devolucion.cs" />
-    <Compile Include="Empleado.cs" />
     <Compile Include="Marca.cs" />
-    <Compile Include="MetodoPago.cs" />
     <Compile Include="MovimientoCaja.cs" />
     <Compile Include="MovimientoInventario.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proveedor.cs" />
-    <Compile Include="Rol.cs" />
+    <Compile Include="Usuario.cs" />
     <Compile Include="Venta.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
