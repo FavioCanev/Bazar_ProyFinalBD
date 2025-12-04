@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Cliente
+    public class Cliente
     {
-        private int idCliente { get; set; }
-        private string nombre { get; set; }
-        private string apellidoPaterno { get; set; }
-        private string apellidoMaterno { get; set; }
-        private string dni { get; set; }
-        private string telefono { get; set; }
+        public int idCliente { get; set; }
+        public string nombre { get; set; }
+        public string apellidoPaterno { get; set; }
+        public string apellidoMaterno { get; set; }
+        public string dni { get; set; }
+        public string telefono { get; set; }
 
         //Constructores
         public Cliente(int idCliente, string nombre, string apellidoPaterno, string apellidoMaterno, string dni, string telefono)

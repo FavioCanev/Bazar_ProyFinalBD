@@ -47,6 +47,7 @@
     <Compile Include="ContactoProveedor.cs" />
     <Compile Include="DetalleCompra.cs" />
     <Compile Include="DetalleVenta.cs" />
+    <Compile Include="DetalleVentaEntidad.cs" />
     <Compile Include="Empleado.cs" />
     <Compile Include="Marca.cs" />
     <Compile Include="MovimientoCaja.cs" />

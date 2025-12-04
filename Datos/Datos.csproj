@@ -41,13 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CajasDatos.cs" />
+    <Compile Include="ClientesDatos.cs" />
     <Compile Include="ConexionDB.cs" />
     <Compile Include="EmpleadoDatos.cs" />
     <Compile Include="InventarioDatos.cs" />
     <Compile Include="MovimientosDatos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProveedorDatos.cs" />
+    <Compile Include="RolDatos.cs" />
     <Compile Include="UsuarioDatos.cs" />
+    <Compile Include="VentaDatos.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj">

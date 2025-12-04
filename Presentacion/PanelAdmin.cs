@@ -58,7 +58,7 @@ namespace Presentacion
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Restart();
         }
 
         private void btnMovimientos_Click(object sender, EventArgs e)

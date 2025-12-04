@@ -20,6 +20,8 @@ namespace Presentacion
         }
 
         private UsuarioDatos usuarioDatos = new UsuarioDatos();
+        private RolDatos rolDatos = new RolDatos();
+        private CajasDatos cajaDatos = new CajasDatos();
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -28,18 +30,31 @@ namespace Presentacion
 
             Usuario u = usuarioDatos.Login(usuario, contrasena);
 
-            if (u != null)
+            if (u != null && !u.bloqueado)
             {
-                MessageBox.Show("Inicio de sesión exitoso. Bienvenido " + u.nombreUsuario + "!", "Éxito", 
-                    MessageBoxButtons.OK, 
-                    MessageBoxIcon.Information);
-                PanelAdmin panel = new PanelAdmin(u);
-                this.Hide();
-                panel.Show();
+                string rol = rolDatos.obtenerRolDeEmpleado(u.idEmpleado); //hacer este método en Datos
+
+                if (rol == "VENDEDOR")
+                {
+                    int idTurno = cajaDatos.abrirTurno(u.idEmpleado);
+                    PanelVendedor pv = new PanelVendedor(u, idTurno);
+                    pv.Show();
+                    this.Hide();
+                }
+                else if (rol == "ADMINISTRADOR")
+                {
+                    PanelAdmin panel = new PanelAdmin(u);
+                    this.Hide();
+                    panel.Show();
+                }
+                else
+                {
+                    //abrir panel de almacenero
+                }
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrectos. Inténtelo de nuevo.", "Error de inicio de sesión",
+                MessageBox.Show("Usuario o contraseña incorrectos, o usuario bloqueado." + "Inténtelo de nuevo.", "Error de inicio de sesión",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
             }
