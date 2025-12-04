@@ -52,17 +52,17 @@
     <Compile Include="CajaPanel.Designer.cs">
       <DependentUpon>CajaPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="CompraPanel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CompraPanel.Designer.cs">
-      <DependentUpon>CompraPanel.cs</DependentUpon>
-    </Compile>
     <Compile Include="EditarEmpleadoEmergente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditarEmpleadoEmergente.Designer.cs">
       <DependentUpon>EditarEmpleadoEmergente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarProveedorEmergente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarProveedorEmergente.Designer.cs">
+      <DependentUpon>EditarProveedorEmergente.cs</DependentUpon>
     </Compile>
     <Compile Include="EditarUsuarioEmergente.cs">
       <SubType>Form</SubType>
@@ -81,6 +81,12 @@
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovimientosPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovimientosPanel.Designer.cs">
+      <DependentUpon>MovimientosPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="PaletaColores.cs" />
     <Compile Include="PanelAdmin.cs">
@@ -103,20 +109,14 @@
     <Compile Include="UsuarioPanel.Designer.cs">
       <DependentUpon>UsuarioPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="VentaPanel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VentaPanel.Designer.cs">
-      <DependentUpon>VentaPanel.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="CajaPanel.resx">
       <DependentUpon>CajaPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CompraPanel.resx">
-      <DependentUpon>CompraPanel.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="EditarEmpleadoEmergente.resx">
       <DependentUpon>EditarEmpleadoEmergente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarProveedorEmergente.resx">
+      <DependentUpon>EditarProveedorEmergente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditarUsuarioEmergente.resx">
       <DependentUpon>EditarUsuarioEmergente.cs</DependentUpon>
@@ -126,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovimientosPanel.resx">
+      <DependentUpon>MovimientosPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PanelAdmin.resx">
       <DependentUpon>PanelAdmin.cs</DependentUpon>
@@ -144,9 +147,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UsuarioPanel.resx">
       <DependentUpon>UsuarioPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VentaPanel.resx">
-      <DependentUpon>VentaPanel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

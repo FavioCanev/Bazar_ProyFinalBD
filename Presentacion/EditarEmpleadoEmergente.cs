@@ -61,7 +61,7 @@ namespace Presentacion
                 return;
             }
             string estadoSelec;
-            if (cbxActivo.Checked = true)
+            if (cbxActivo.Checked == true)
             {
                 estadoSelec = "ACTIVO";
             }

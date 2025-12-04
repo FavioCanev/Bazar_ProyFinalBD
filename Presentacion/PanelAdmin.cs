@@ -46,16 +46,6 @@ namespace Presentacion
             AbrirFormularioEnPanel(new ProveedorPanel());
         }
 
-        private void btnPanelCompras_Click(object sender, EventArgs e)
-        {
-            AbrirFormularioEnPanel(new CompraPanel());
-        }
-
-        private void btnPanelVentas_Click(object sender, EventArgs e)
-        {
-            AbrirFormularioEnPanel(new VentaPanel());
-        }
-
         private void btnPanelInventario_Click(object sender, EventArgs e)
         {
             AbrirFormularioEnPanel(new InventarioPanel());
@@ -69,6 +59,11 @@ namespace Presentacion
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnMovimientos_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new MovimientosPanel());
         }
     }
 }

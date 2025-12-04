@@ -17,6 +17,7 @@ namespace Datos
         static string usuario = "BazarUser";
         static string contraseña = "ContraseñaUltrasegura123";
         static string puerto = "49679"; //un lío tremendo para encontrar y conectar el puerto
+        //hoy se cambió solo de 8 a 9 el último dígito
 
 
         //juntarlo todo en un string para mandarlo al objeto de tipo SQLConnection en el atributo ConnectionString

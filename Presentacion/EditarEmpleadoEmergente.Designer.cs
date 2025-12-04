@@ -51,157 +51,140 @@
             // lblCrearEmpleado
             // 
             this.lblCrearEmpleado.AutoSize = true;
-            this.lblCrearEmpleado.Location = new System.Drawing.Point(201, 46);
-            this.lblCrearEmpleado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCrearEmpleado.Location = new System.Drawing.Point(151, 37);
             this.lblCrearEmpleado.Name = "lblCrearEmpleado";
-            this.lblCrearEmpleado.Size = new System.Drawing.Size(108, 16);
+            this.lblCrearEmpleado.Size = new System.Drawing.Size(82, 13);
             this.lblCrearEmpleado.TabIndex = 0;
-            this.lblCrearEmpleado.Text = "Editar Empleado";
+            this.lblCrearEmpleado.Text = "Crear Empleado";
             // 
             // tbNombreEmpleado
             // 
-            this.tbNombreEmpleado.Location = new System.Drawing.Point(88, 106);
-            this.tbNombreEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbNombreEmpleado.Location = new System.Drawing.Point(66, 86);
             this.tbNombreEmpleado.Name = "tbNombreEmpleado";
-            this.tbNombreEmpleado.Size = new System.Drawing.Size(355, 22);
+            this.tbNombreEmpleado.Size = new System.Drawing.Size(267, 20);
             this.tbNombreEmpleado.TabIndex = 1;
             // 
             // lblNombreEmpleado
             // 
             this.lblNombreEmpleado.AutoSize = true;
-            this.lblNombreEmpleado.Location = new System.Drawing.Point(88, 82);
-            this.lblNombreEmpleado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombreEmpleado.Location = new System.Drawing.Point(66, 67);
             this.lblNombreEmpleado.Name = "lblNombreEmpleado";
-            this.lblNombreEmpleado.Size = new System.Drawing.Size(56, 16);
+            this.lblNombreEmpleado.Size = new System.Drawing.Size(44, 13);
             this.lblNombreEmpleado.TabIndex = 2;
             this.lblNombreEmpleado.Text = "Nombre";
             // 
             // lblApellidos
             // 
             this.lblApellidos.AutoSize = true;
-            this.lblApellidos.Location = new System.Drawing.Point(92, 154);
-            this.lblApellidos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblApellidos.Location = new System.Drawing.Point(69, 125);
             this.lblApellidos.Name = "lblApellidos";
-            this.lblApellidos.Size = new System.Drawing.Size(64, 16);
+            this.lblApellidos.Size = new System.Drawing.Size(49, 13);
             this.lblApellidos.TabIndex = 3;
             this.lblApellidos.Text = "Apellidos";
             // 
             // tbApellidosSinSeparar
             // 
-            this.tbApellidosSinSeparar.Location = new System.Drawing.Point(88, 174);
-            this.tbApellidosSinSeparar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbApellidosSinSeparar.Location = new System.Drawing.Point(66, 141);
             this.tbApellidosSinSeparar.Name = "tbApellidosSinSeparar";
-            this.tbApellidosSinSeparar.Size = new System.Drawing.Size(355, 22);
+            this.tbApellidosSinSeparar.Size = new System.Drawing.Size(267, 20);
             this.tbApellidosSinSeparar.TabIndex = 4;
             // 
             // tbDniEmpleado
             // 
-            this.tbDniEmpleado.Location = new System.Drawing.Point(88, 240);
-            this.tbDniEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbDniEmpleado.Location = new System.Drawing.Point(66, 195);
             this.tbDniEmpleado.Name = "tbDniEmpleado";
-            this.tbDniEmpleado.Size = new System.Drawing.Size(165, 22);
+            this.tbDniEmpleado.Size = new System.Drawing.Size(125, 20);
             this.tbDniEmpleado.TabIndex = 6;
             // 
             // lblDniEmpleado
             // 
             this.lblDniEmpleado.AutoSize = true;
-            this.lblDniEmpleado.Location = new System.Drawing.Point(92, 220);
-            this.lblDniEmpleado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDniEmpleado.Location = new System.Drawing.Point(69, 179);
             this.lblDniEmpleado.Name = "lblDniEmpleado";
-            this.lblDniEmpleado.Size = new System.Drawing.Size(30, 16);
+            this.lblDniEmpleado.Size = new System.Drawing.Size(26, 13);
             this.lblDniEmpleado.TabIndex = 5;
             this.lblDniEmpleado.Text = "DNI";
             // 
             // tbTelefono
             // 
-            this.tbTelefono.Location = new System.Drawing.Point(263, 240);
-            this.tbTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbTelefono.Location = new System.Drawing.Point(197, 195);
             this.tbTelefono.Name = "tbTelefono";
-            this.tbTelefono.Size = new System.Drawing.Size(180, 22);
+            this.tbTelefono.Size = new System.Drawing.Size(136, 20);
             this.tbTelefono.TabIndex = 8;
             // 
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(267, 220);
-            this.lblTelefono.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTelefono.Location = new System.Drawing.Point(200, 179);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(61, 16);
+            this.lblTelefono.Size = new System.Drawing.Size(49, 13);
             this.lblTelefono.TabIndex = 7;
             this.lblTelefono.Text = "Teléfono";
             // 
             // tbSueldo
             // 
-            this.tbSueldo.Location = new System.Drawing.Point(88, 310);
-            this.tbSueldo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbSueldo.Location = new System.Drawing.Point(66, 252);
             this.tbSueldo.Name = "tbSueldo";
-            this.tbSueldo.Size = new System.Drawing.Size(165, 22);
+            this.tbSueldo.Size = new System.Drawing.Size(125, 20);
             this.tbSueldo.TabIndex = 10;
             // 
             // lblSueldo
             // 
             this.lblSueldo.AutoSize = true;
-            this.lblSueldo.Location = new System.Drawing.Point(92, 290);
-            this.lblSueldo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSueldo.Location = new System.Drawing.Point(69, 236);
             this.lblSueldo.Name = "lblSueldo";
-            this.lblSueldo.Size = new System.Drawing.Size(50, 16);
+            this.lblSueldo.Size = new System.Drawing.Size(40, 13);
             this.lblSueldo.TabIndex = 9;
             this.lblSueldo.Text = "Sueldo";
             // 
             // cbRoles
             // 
             this.cbRoles.FormattingEnabled = true;
-            this.cbRoles.Location = new System.Drawing.Point(263, 310);
-            this.cbRoles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbRoles.Location = new System.Drawing.Point(197, 252);
             this.cbRoles.Name = "cbRoles";
-            this.cbRoles.Size = new System.Drawing.Size(180, 24);
+            this.cbRoles.Size = new System.Drawing.Size(136, 21);
             this.cbRoles.TabIndex = 11;
             // 
             // lblRol
             // 
             this.lblRol.AutoSize = true;
-            this.lblRol.Location = new System.Drawing.Point(267, 290);
-            this.lblRol.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRol.Location = new System.Drawing.Point(200, 236);
             this.lblRol.Name = "lblRol";
-            this.lblRol.Size = new System.Drawing.Size(28, 16);
+            this.lblRol.Size = new System.Drawing.Size(23, 13);
             this.lblRol.TabIndex = 12;
             this.lblRol.Text = "Rol";
             // 
             // dtpFechaContratacion
             // 
-            this.dtpFechaContratacion.Location = new System.Drawing.Point(88, 389);
-            this.dtpFechaContratacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFechaContratacion.Location = new System.Drawing.Point(66, 316);
             this.dtpFechaContratacion.Name = "dtpFechaContratacion";
-            this.dtpFechaContratacion.Size = new System.Drawing.Size(355, 22);
+            this.dtpFechaContratacion.Size = new System.Drawing.Size(267, 20);
             this.dtpFechaContratacion.TabIndex = 13;
             // 
             // lblFechaContratacion
             // 
             this.lblFechaContratacion.AutoSize = true;
-            this.lblFechaContratacion.Location = new System.Drawing.Point(92, 369);
-            this.lblFechaContratacion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFechaContratacion.Location = new System.Drawing.Point(69, 300);
             this.lblFechaContratacion.Name = "lblFechaContratacion";
-            this.lblFechaContratacion.Size = new System.Drawing.Size(140, 16);
+            this.lblFechaContratacion.Size = new System.Drawing.Size(114, 13);
             this.lblFechaContratacion.TabIndex = 14;
             this.lblFechaContratacion.Text = "Fecha de contratación";
             // 
             // cbxActivo
             // 
             this.cbxActivo.AutoSize = true;
-            this.cbxActivo.Location = new System.Drawing.Point(239, 448);
-            this.cbxActivo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxActivo.Location = new System.Drawing.Point(179, 364);
             this.cbxActivo.Name = "cbxActivo";
-            this.cbxActivo.Size = new System.Drawing.Size(66, 20);
+            this.cbxActivo.Size = new System.Drawing.Size(56, 17);
             this.cbxActivo.TabIndex = 15;
             this.cbxActivo.Text = "Activo";
             this.cbxActivo.UseVisualStyleBackColor = true;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(344, 503);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Location = new System.Drawing.Point(258, 409);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(100, 28);
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 16;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -209,10 +192,9 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(88, 503);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Location = new System.Drawing.Point(66, 409);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(100, 28);
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 17;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -220,9 +202,9 @@
             // 
             // EditarEmpleadoEmergente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(556, 577);
+            this.ClientSize = new System.Drawing.Size(417, 469);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.cbxActivo);
@@ -241,7 +223,6 @@
             this.Controls.Add(this.lblNombreEmpleado);
             this.Controls.Add(this.tbNombreEmpleado);
             this.Controls.Add(this.lblCrearEmpleado);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EditarEmpleadoEmergente";
             this.Text = "EditarEmpleadoEmergente";
             this.Load += new System.EventHandler(this.EditarEmpleadoEmergente_Load);
