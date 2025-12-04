@@ -32,6 +32,7 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnNuevoProveedor = new System.Windows.Forms.Button();
             this.btnEditarProveedor = new System.Windows.Forms.Button();
+            this.btnVerContacto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,21 +43,21 @@
             this.dgvProveedores.AllowUserToResizeRows = false;
             this.dgvProveedores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProveedores.Location = new System.Drawing.Point(9, 11);
-            this.dgvProveedores.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvProveedores.Location = new System.Drawing.Point(12, 14);
+            this.dgvProveedores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvProveedores.Name = "dgvProveedores";
             this.dgvProveedores.RowHeadersWidth = 51;
             this.dgvProveedores.RowTemplate.Height = 24;
             this.dgvProveedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProveedores.Size = new System.Drawing.Size(877, 423);
+            this.dgvProveedores.Size = new System.Drawing.Size(1169, 521);
             this.dgvProveedores.TabIndex = 1;
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(735, 452);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnActualizar.Location = new System.Drawing.Point(980, 556);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(151, 41);
+            this.btnActualizar.Size = new System.Drawing.Size(201, 50);
             this.btnActualizar.TabIndex = 2;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -64,10 +65,10 @@
             // 
             // btnNuevoProveedor
             // 
-            this.btnNuevoProveedor.Location = new System.Drawing.Point(532, 452);
-            this.btnNuevoProveedor.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNuevoProveedor.Location = new System.Drawing.Point(709, 556);
+            this.btnNuevoProveedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNuevoProveedor.Name = "btnNuevoProveedor";
-            this.btnNuevoProveedor.Size = new System.Drawing.Size(151, 41);
+            this.btnNuevoProveedor.Size = new System.Drawing.Size(201, 50);
             this.btnNuevoProveedor.TabIndex = 3;
             this.btnNuevoProveedor.Text = "Nuevo Proveedor";
             this.btnNuevoProveedor.UseVisualStyleBackColor = true;
@@ -75,25 +76,37 @@
             // 
             // btnEditarProveedor
             // 
-            this.btnEditarProveedor.Location = new System.Drawing.Point(325, 452);
-            this.btnEditarProveedor.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEditarProveedor.Location = new System.Drawing.Point(433, 556);
+            this.btnEditarProveedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditarProveedor.Name = "btnEditarProveedor";
-            this.btnEditarProveedor.Size = new System.Drawing.Size(151, 41);
+            this.btnEditarProveedor.Size = new System.Drawing.Size(201, 50);
             this.btnEditarProveedor.TabIndex = 4;
             this.btnEditarProveedor.Text = "Editar Proveedor";
             this.btnEditarProveedor.UseVisualStyleBackColor = true;
             this.btnEditarProveedor.Click += new System.EventHandler(this.btnEditarProveedor_Click);
             // 
+            // btnVerContacto
+            // 
+            this.btnVerContacto.Location = new System.Drawing.Point(156, 556);
+            this.btnVerContacto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVerContacto.Name = "btnVerContacto";
+            this.btnVerContacto.Size = new System.Drawing.Size(201, 50);
+            this.btnVerContacto.TabIndex = 5;
+            this.btnVerContacto.Text = "Ver información de contacto";
+            this.btnVerContacto.UseVisualStyleBackColor = true;
+            this.btnVerContacto.Click += new System.EventHandler(this.btnVerContacto_Click);
+            // 
             // ProveedorPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 527);
+            this.ClientSize = new System.Drawing.Size(1196, 649);
+            this.Controls.Add(this.btnVerContacto);
             this.Controls.Add(this.btnEditarProveedor);
             this.Controls.Add(this.btnNuevoProveedor);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.dgvProveedores);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ProveedorPanel";
             this.Text = "ProveedorPanel";
             this.Load += new System.EventHandler(this.ProveedorPanel_Load);
@@ -108,5 +121,6 @@
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnNuevoProveedor;
         private System.Windows.Forms.Button btnEditarProveedor;
+        private System.Windows.Forms.Button btnVerContacto;
     }
 }

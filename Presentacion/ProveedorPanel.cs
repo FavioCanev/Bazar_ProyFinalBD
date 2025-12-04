@@ -86,5 +86,10 @@ namespace Presentacion
                 }
             }
         }
+
+        private void btnVerContacto_Click(object sender, EventArgs e)
+        {
+            //falta implementar
+        }
     }
 }

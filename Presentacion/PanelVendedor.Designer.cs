@@ -46,8 +46,14 @@
             this.lblMontoDescuento = new System.Windows.Forms.Label();
             this.lblMontoTotal = new System.Windows.Forms.Label();
             this.lblMontoSubtotal = new System.Windows.Forms.Label();
+            this.nudCantidad = new System.Windows.Forms.NumericUpDown();
+            this.btnAgregarProducto = new System.Windows.Forms.Button();
+            this.lblNombreProductoSelec = new System.Windows.Forms.Label();
+            this.btnQuitar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductosDisponibles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -112,7 +118,7 @@
             // 
             // btnConfirmarVenta
             // 
-            this.btnConfirmarVenta.Location = new System.Drawing.Point(1502, 474);
+            this.btnConfirmarVenta.Location = new System.Drawing.Point(1502, 807);
             this.btnConfirmarVenta.Name = "btnConfirmarVenta";
             this.btnConfirmarVenta.Size = new System.Drawing.Size(75, 23);
             this.btnConfirmarVenta.TabIndex = 6;
@@ -168,7 +174,7 @@
             // 
             // btnCancelarVenta
             // 
-            this.btnCancelarVenta.Location = new System.Drawing.Point(1312, 474);
+            this.btnCancelarVenta.Location = new System.Drawing.Point(1312, 807);
             this.btnCancelarVenta.Name = "btnCancelarVenta";
             this.btnCancelarVenta.Size = new System.Drawing.Size(75, 23);
             this.btnCancelarVenta.TabIndex = 12;
@@ -221,11 +227,62 @@
             this.lblMontoSubtotal.TabIndex = 14;
             this.lblMontoSubtotal.Text = "0000.00";
             // 
+            // nudCantidad
+            // 
+            this.nudCantidad.Location = new System.Drawing.Point(1312, 515);
+            this.nudCantidad.Name = "nudCantidad";
+            this.nudCantidad.Size = new System.Drawing.Size(253, 22);
+            this.nudCantidad.TabIndex = 18;
+            // 
+            // btnAgregarProducto
+            // 
+            this.btnAgregarProducto.Location = new System.Drawing.Point(1394, 543);
+            this.btnAgregarProducto.Name = "btnAgregarProducto";
+            this.btnAgregarProducto.Size = new System.Drawing.Size(89, 31);
+            this.btnAgregarProducto.TabIndex = 19;
+            this.btnAgregarProducto.Text = "Agregar";
+            this.btnAgregarProducto.UseVisualStyleBackColor = true;
+            this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click);
+            // 
+            // lblNombreProductoSelec
+            // 
+            this.lblNombreProductoSelec.AutoSize = true;
+            this.lblNombreProductoSelec.Location = new System.Drawing.Point(1362, 485);
+            this.lblNombreProductoSelec.Name = "lblNombreProductoSelec";
+            this.lblNombreProductoSelec.Size = new System.Drawing.Size(146, 16);
+            this.lblNombreProductoSelec.TabIndex = 20;
+            this.lblNombreProductoSelec.Text = "Producto seleccionado";
+            // 
+            // btnQuitar
+            // 
+            this.btnQuitar.Location = new System.Drawing.Point(1394, 580);
+            this.btnQuitar.Name = "btnQuitar";
+            this.btnQuitar.Size = new System.Drawing.Size(89, 31);
+            this.btnQuitar.TabIndex = 21;
+            this.btnQuitar.Text = "Quitar";
+            this.btnQuitar.UseVisualStyleBackColor = true;
+            this.btnQuitar.Click += new System.EventHandler(this.btnQuitar_Click);
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Location = new System.Drawing.Point(545, 428);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(89, 31);
+            this.btnActualizar.TabIndex = 22;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
             // PanelVendedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1627, 843);
+            this.Controls.Add(this.btnActualizar);
+            this.Controls.Add(this.btnQuitar);
+            this.Controls.Add(this.lblNombreProductoSelec);
+            this.Controls.Add(this.btnAgregarProducto);
+            this.Controls.Add(this.nudCantidad);
             this.Controls.Add(this.lblIgv);
             this.Controls.Add(this.lblMontoDescuento);
             this.Controls.Add(this.lblMontoTotal);
@@ -250,6 +307,7 @@
             this.Load += new System.EventHandler(this.PanelVendedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductosDisponibles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,5 +333,10 @@
         private System.Windows.Forms.Label lblMontoDescuento;
         private System.Windows.Forms.Label lblMontoTotal;
         private System.Windows.Forms.Label lblMontoSubtotal;
+        private System.Windows.Forms.NumericUpDown nudCantidad;
+        private System.Windows.Forms.Button btnAgregarProducto;
+        private System.Windows.Forms.Label lblNombreProductoSelec;
+        private System.Windows.Forms.Button btnQuitar;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }

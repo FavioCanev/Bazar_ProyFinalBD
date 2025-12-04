@@ -190,5 +190,67 @@ namespace Presentacion
             lblMontoDescuento.Text = "Descuento: $" + descuento.ToString("0.00");
             lblMontoTotal.Text = "Total: $" + total.ToString("0.00");
         }
+
+        private void btnAgregarProducto_Click(object sender, EventArgs e)
+        {
+            if (dgvProductosDisponibles.CurrentRow == null)
+            {
+                MessageBox.Show("Selecciona un producto");
+                return;
+            }
+            int cantidad = (int)nudCantidad.Value;
+            if (cantidad <= 0)
+            {
+                MessageBox.Show("La cantidad debe ser mayor a cero.");
+                return;
+            }
+            // Datos del producto seleccionado
+            int idProducto = Convert.ToInt32(dgvProductosDisponibles.CurrentRow.Cells["IdProducto"].Value);
+            string nombre = dgvProductosDisponibles.CurrentRow.Cells["Nombre"].Value.ToString();
+            decimal precio = Convert.ToDecimal(dgvProductosDisponibles.CurrentRow.Cells["PrecioVenta"].Value);
+            int stockDisponible = Convert.ToInt32(dgvProductosDisponibles.CurrentRow.Cells["Stock"].Value);
+
+            //Cantidad total del carrito
+            int CantidadCarrito = 0;
+            foreach (DataGridViewRow row in dgvCarrito.Rows)
+            {
+                if (row.Cells["IdProducto"].Value != null &&
+                    Convert.ToInt32(row.Cells["IdProducto"].Value) == idProducto)
+                {
+                    CantidadCarrito += Convert.ToInt32(row.Cells["Cantidad"].Value);
+                }
+            }
+
+            //Verificación si se encuentra stock disponible
+            if (CantidadCarrito + cantidad > stockDisponible)
+            {
+                MessageBox.Show("Stock insuficiente. Disponible: " + (stockDisponible - CantidadCarrito));
+                return;
+            }
+
+            decimal subtotal = cantidad * precio;
+
+            dgvCarrito.Rows.Add(idProducto, nombre, precio, cantidad, subtotal);
+
+            actualizarTotales();
+        }
+
+        private void btnQuitar_Click(object sender, EventArgs e)
+        {
+            if (dgvCarrito.CurrentRow == null) return;
+
+            dgvCarrito.Rows.Remove(dgvCarrito.CurrentRow);
+            actualizarTotales();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            // Actualizar productos y limpiar carrito
+            productosTabla = ventaDatos.listarProductosConStock();
+            dgvProductosDisponibles.DataSource = productosTabla;
+
+            dgvCarrito.Rows.Clear();
+            actualizarTotales();
+        }
     }
 }
