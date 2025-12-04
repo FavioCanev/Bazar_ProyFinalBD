@@ -42,9 +42,10 @@
             this.lblLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(127)))), ((int)(((byte)(190)))));
             this.lblLogin.Font = new System.Drawing.Font("Javanese Text", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(39)))), ((int)(((byte)(143)))));
-            this.lblLogin.Location = new System.Drawing.Point(235, 49);
+            this.lblLogin.Location = new System.Drawing.Point(313, 60);
+            this.lblLogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(269, 145);
+            this.lblLogin.Size = new System.Drawing.Size(336, 182);
             this.lblLogin.TabIndex = 0;
             this.lblLogin.Text = "LOGIN";
             this.lblLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -53,10 +54,10 @@
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Javanese Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(39)))), ((int)(((byte)(143)))));
-            this.txtUsuario.Location = new System.Drawing.Point(218, 164);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(5);
+            this.txtUsuario.Location = new System.Drawing.Point(291, 202);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(299, 44);
+            this.txtUsuario.Size = new System.Drawing.Size(397, 53);
             this.txtUsuario.TabIndex = 1;
             this.txtUsuario.Text = "Usuario";
             // 
@@ -64,10 +65,11 @@
             // 
             this.txtContrasena.Font = new System.Drawing.Font("Javanese Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasena.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(39)))), ((int)(((byte)(143)))));
-            this.txtContrasena.Location = new System.Drawing.Point(218, 218);
-            this.txtContrasena.Margin = new System.Windows.Forms.Padding(5);
+            this.txtContrasena.Location = new System.Drawing.Point(291, 268);
+            this.txtContrasena.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.txtContrasena.Name = "txtContrasena";
-            this.txtContrasena.Size = new System.Drawing.Size(299, 44);
+            this.txtContrasena.PasswordChar = '*';
+            this.txtContrasena.Size = new System.Drawing.Size(397, 53);
             this.txtContrasena.TabIndex = 2;
             this.txtContrasena.Text = "Contraseña";
             // 
@@ -78,9 +80,10 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Javanese Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(300, 281);
+            this.btnLogin.Location = new System.Drawing.Point(400, 346);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(130, 37);
+            this.btnLogin.Size = new System.Drawing.Size(173, 46);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "ENTRAR";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -89,24 +92,26 @@
             // pbFondoCentro
             // 
             this.pbFondoCentro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(127)))), ((int)(((byte)(190)))));
-            this.pbFondoCentro.Location = new System.Drawing.Point(160, 12);
+            this.pbFondoCentro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbFondoCentro.Location = new System.Drawing.Point(213, 15);
+            this.pbFondoCentro.Margin = new System.Windows.Forms.Padding(4);
             this.pbFondoCentro.Name = "pbFondoCentro";
-            this.pbFondoCentro.Size = new System.Drawing.Size(418, 440);
+            this.pbFondoCentro.Size = new System.Drawing.Size(557, 541);
             this.pbFondoCentro.TabIndex = 4;
             this.pbFondoCentro.TabStop = false;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(166)))), ((int)(((byte)(208)))));
-            this.ClientSize = new System.Drawing.Size(745, 464);
+            this.ClientSize = new System.Drawing.Size(993, 571);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.pbFondoCentro);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login";
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pbFondoCentro)).EndInit();

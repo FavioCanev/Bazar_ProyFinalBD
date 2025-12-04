@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,62 @@ namespace Presentacion
 {
     public partial class PanelAdmin : Form
     {
-        public PanelAdmin()
+        private Usuario usuarioLogueado;
+
+        public PanelAdmin(Usuario usuario)
         {
             InitializeComponent();
+            usuarioLogueado = usuario;
+        }
+
+        private void PanelAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AbrirFormularioEnPanel(Form formHijo)
+        {
+            panelContenedor.Controls.Clear();
+            formHijo.TopLevel = false;
+            formHijo.FormBorderStyle = FormBorderStyle.None;
+            formHijo.Dock = DockStyle.Fill;
+            panelContenedor.Controls.Add(formHijo);
+            formHijo.Show();
+        }
+
+        private void btnPanelUsuarios_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new UsuarioPanel());
+        }
+
+        private void btnPanelProveedores_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new ProveedorPanel());
+        }
+
+        private void btnPanelCompras_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new CompraPanel());
+        }
+
+        private void btnPanelVentas_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new VentaPanel());
+        }
+
+        private void btnPanelInventario_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new InventarioPanel());
+        }
+
+        private void btnPanelCajas_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new CajaPanel());
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

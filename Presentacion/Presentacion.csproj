@@ -46,6 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CajaPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CajaPanel.Designer.cs">
+      <DependentUpon>CajaPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompraPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompraPanel.Designer.cs">
+      <DependentUpon>CompraPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarEmpleadoEmergente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarEmpleadoEmergente.Designer.cs">
+      <DependentUpon>EditarEmpleadoEmergente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarUsuarioEmergente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarUsuarioEmergente.Designer.cs">
+      <DependentUpon>EditarUsuarioEmergente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventarioPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventarioPanel.Designer.cs">
+      <DependentUpon>InventarioPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +91,39 @@
     </Compile>
     <Compile Include="Principal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProveedorPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedorPanel.Designer.cs">
+      <DependentUpon>ProveedorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioPanel.Designer.cs">
+      <DependentUpon>UsuarioPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentaPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentaPanel.Designer.cs">
+      <DependentUpon>VentaPanel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CajaPanel.resx">
+      <DependentUpon>CajaPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompraPanel.resx">
+      <DependentUpon>CompraPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarEmpleadoEmergente.resx">
+      <DependentUpon>EditarEmpleadoEmergente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarUsuarioEmergente.resx">
+      <DependentUpon>EditarUsuarioEmergente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventarioPanel.resx">
+      <DependentUpon>InventarioPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +139,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ProveedorPanel.resx">
+      <DependentUpon>ProveedorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioPanel.resx">
+      <DependentUpon>UsuarioPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentaPanel.resx">
+      <DependentUpon>VentaPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

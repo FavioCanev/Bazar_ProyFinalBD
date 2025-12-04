@@ -14,10 +14,10 @@ namespace Entidades
         public string nombreUsuario { get; set; }
         public string contrasenaUsuario { get; set; }
         public int idEmpleado { get; set; }
-        public string bloqueado {  get; set; }
+        public bool bloqueado {  get; set; }
         public DateTime fechaCreacion { get; set; }
 
-        public Usuario(int idUsuario, string nombreUsuario, string contrasenaUsuario, int idEmpleado, string bloqueado, DateTime fechaCreacion)
+        public Usuario(int idUsuario, string nombreUsuario, string contrasenaUsuario, int idEmpleado, bool bloqueado, DateTime fechaCreacion)
         {
             this.idUsuario = idUsuario;
             this.nombreUsuario = nombreUsuario;

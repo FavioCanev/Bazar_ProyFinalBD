@@ -27,12 +27,15 @@ namespace Presentacion
             string contrasena = txtContrasena.Text.Trim();
 
             Usuario u = usuarioDatos.Login(usuario, contrasena);
+
             if (u != null)
             {
                 MessageBox.Show("Inicio de sesión exitoso. Bienvenido " + u.nombreUsuario + "!", "Éxito", 
                     MessageBoxButtons.OK, 
                     MessageBoxIcon.Information);
-                //aquí redirigir al formulario principal
+                PanelAdmin panel = new PanelAdmin(u);
+                this.Hide();
+                panel.Show();
             }
             else
             {
